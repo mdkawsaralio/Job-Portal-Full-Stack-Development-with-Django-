@@ -1,0 +1,50 @@
+{%load static%}
+
+<nav class="navbar">
+    <!-- Left side: Logo and website name -->
+    <div class="left-navbar">
+        <img src="{% static 'image/logo.png' %}" alt="Job Portal Logo" class="left-navbar-img">
+    </div>
+    <!-- middle: Navigation menu -->
+    <div class="middle-navbar">
+        <ul class="nav-options">
+            <li class="nav-options-main">
+                <a href="/">Home</a>
+            </li>
+            <li class="nav-options-main">
+                <a href="#">Jobs </a>
+
+                <ul class="dropdown-menu">
+                    <li class="nav-options-sub"><a href="#">Intern</a></li>
+                    <li class="nav-options-sub"><a href="#">Full Time</a></li>
+                    <li class="nav-options-sub"><a href="#">Remote</a></li>
+                    <li class="nav-options-sub"><a href="#">Hybrid</a></li>
+                </ul>
+            </li>
+            <li class="nav-options-main">
+                <a href="/">Resources</a>
+            </li>
+             <li class="nav-options-main">
+                <a href="/">About</a>
+            </li>
+        </ul>
+    </div>
+    <!-- right side: Navigation menu -->
+     <div class="right-navbar">
+        <ul class="account">
+            <li class="login-main">
+                <a href="">Login</a>
+                <ul class="dropdown-menu-login">
+                    <li class="nav-options-sub"><a href="#">Login As Employer</a></li>
+                    <li class="nav-options-sub"><a href="#">Login As Job Seeker</a></li>
+                </ul>
+            </li>
+            <li class="register">
+                <a href="#">Register</a>
+                <ul class="dropdown-menu-register">
+                    <li class="nav-options-sub"><a href="#">Register As Employer</a></li>
+                    <li class="nav-options-sub"><a href="#">Register As Job Seeker</a></li>
+                </ul>
+            </li>
+     </div>
+</nav>
