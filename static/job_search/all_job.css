@@ -10,7 +10,7 @@ light: #0ef366
     margin: 0;
     width: 100%;
     height: 280px;
-    background:linear-gradient(to right,#074f23,#0ef366 );
+    background: linear-gradient(to right, rgba(7, 79, 35, 0.237), rgba(14, 243, 102, 0.205));
     z-index: 1;
     position: relative;
 }
@@ -20,6 +20,7 @@ light: #0ef366
     z-index: 2;
     top: 20%;
     left: 20%;
+    transform: translate(-9%,-15%);
 }
 .hero-descriptions{
     text-align: center;
@@ -29,10 +30,11 @@ light: #0ef366
 .hero-descriptions::after{
     content: "";
     display: block;
-    border-bottom: 1px solid black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 70%;
+    border-bottom: 1px solid rgba(7, 79, 35, 0.2);
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    width: 90%;
 
 }
 
@@ -57,12 +59,16 @@ light: #0ef366
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+   
+    
 }
 
 
 .search-keyword{
-    width: 40px;
-    height: 20px;
+    width: 20rem;
+    height: 3rem ;
     font-size: 16px;
     padding: 5px 10px;
     border: none;
@@ -72,8 +78,8 @@ light: #0ef366
 }
 
 .search-location{
-    width: 30px;
-    height: 20px;
+    width: 15rem;
+    height: 3rem;
     font-size: 16px;
     padding: 5px 10px;
     border: none;
@@ -84,8 +90,8 @@ light: #0ef366
 
 
 .search-categories{
-    width: 30px;
-    height: 20px;
+    width: 15rem;
+    height: 3rem;
     font-size: 16px;
     padding: 5px 10px;
     border: none;
@@ -125,8 +131,41 @@ light: #0ef366
 }
 
 .right-sidebar{
-    display: flex;
+        display: flex;
     flex: 1;
 
 }
 
+
+#middle{
+    padding: 10px 30px;
+}
+
+
+.left-sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.left-box{
+    padding: 20px 25px;
+    width: 400px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.144);
+}
+
+
+.right-sidebar{
+    display: flex;
+    flex: 1;
+    padding: 20px 20px;
+    flex-direction: column;
+}
+
+
+.post-list{
+    width: 100%;
+    height: 200px;
+}
