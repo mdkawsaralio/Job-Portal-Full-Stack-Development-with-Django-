@@ -6,6 +6,18 @@ light: #0ef366
 
 */
 
+.middle,.middle-last,.last{
+   margin: 0px 30px;
+}
+#body-content h2{
+    text-transform: uppercase;
+    letter-spacing: 1.15px;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
 .body-content{
     flex: 1;
     min-width: 0;
@@ -108,21 +120,14 @@ light: #0ef366
 
 
 
-.middle{
-    padding: 20px 50px;
-}
+
 .middle-top{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.middle-heading{
-    text-transform: uppercase;
-    letter-spacing: 1.15px;
-    font-weight: 700;
-    font-size: 25px;
-}
+
 .all-companies-button{
     padding: 8px 15px;
     text-transform: uppercase;
@@ -152,9 +157,11 @@ light: #0ef366
     display: flex;
     flex-direction: row;
     gap: 25px;
-    animation: moverighttoleft 20s linear infinite;
 
 }
+
+
+
 .companies-name{
     margin-right: 10px;
     height: 150px;
@@ -216,12 +223,156 @@ light: #0ef366
     animation-play-state: paused;
 }
 
-@keyframes moverighttoleft {
-    from {
-        transform: translateX(0%);
-    }
 
-    to {
-        transform: translateX(-50%);
-    }
+.middle-last-heading{
+    text-align: center;
+}
+
+.categories{
+    padding-top: 20px;
+    margin-bottom: 50px;
+    padding-left: 5px;
+    text-align: center;
+    
+}
+.category-list{
+    text-decoration: none;
+    border-radius: 14px;
+    padding: 10px 16px;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.267);
+    font-size: 16px;
+    font-weight: 700;
+    color: #074f23;
+    background-color: rgba(7, 148, 61, 0.1);
+    display: inline-block;
+    transition: all .4s ease;
+    margin-right: 20px;
+}
+
+.category-list:hover{
+    background-color: #074f23;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+.category-list:hover:active{
+    transform: translateY(-1px);
+}
+
+.job-section-heading{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.last{
+    padding-bottom: 50px;
+}
+
+.post-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+.post-aria{
+    height: 220px;
+    width: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.091);
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.267);
+    box-sizing: border-box;
+    border-radius: 12px;
+    display: inline-block;
+    transition: all .2s ease;
+}
+
+.post-aria a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 25px;
+    display: grid;
+}
+
+.post-aria h3,p,h4{
+    margin: 0;
+}
+
+
+.post{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    display: inline-block;
+    
+}
+
+.post::after{
+    content: "";
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 90%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.post-type{
+    font-size: 14px;
+    margin-bottom: 15px;
+
+}
+
+.post-position{
+    font-size: 20px;
+
+
+}
+
+.post-address{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.post-date{
+    font-size: 16px;
+margin-bottom: 5px;
+}
+.post-company{
+font-size: 16px;
+font-weight: 700;
+
+}
+.post-aria:hover{
+    transform: translateY(-4px);
+}
+.post-aria:hover:active{
+    transform: translateY(-1px);
+}
+
+.all-post{
+    padding-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.all-post-button{
+    padding: 8px 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid #777;
+    transition: all .4s ease;
+    cursor: pointer;
+
+}
+
+
+.all-post-button:hover {
+    background: #074f23;
+    color: white;
 }

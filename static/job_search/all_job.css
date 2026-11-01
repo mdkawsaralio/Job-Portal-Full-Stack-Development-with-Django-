@@ -1,0 +1,42 @@
+/* 
+deep: #074f23
+medium: #07943d 
+light: #0ef366
+
+*/
+
+
+#top{
+    margin: 0;
+    width: 100%;
+    height: 280px;
+    background:linear-gradient(to right,#074f23,#0ef366 );
+    z-index: 1;
+    position: relative;
+}
+
+.hero-search{
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 20%;
+}
+.hero-descriptions{
+    text-align: center;
+    display: inline-block;
+}
+
+.hero-descriptions::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.hero-heading{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}

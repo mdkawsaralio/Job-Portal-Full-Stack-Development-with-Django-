@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block link %}
+
+
+
+{% endblock link %}
+
+<link rel="stylesheet" href="{%static 'job_search/all_job.css'%}">
+
+{% block content %}
+
+
+<section id="top">
+
+    
+<div class="hero-search">
+    <div class="hero-descriptions">
+    <h3 class="hero-heading">Find companies that align with your values</h3>
+    <p class="hero-sub"> Browse company profiles, read about their culture, an connect with employers actively building diverse teams.</p>
+    </div>
+
+    <form method="get" class="hero-search-form">
+        <input type="text" name="keyword" placeholder="Company Name or keywords ">
+        <select name="location">
+            <option value="">Location</option>
+        </select>
+
+        <select name="categories">
+            <option value="">All Categories</option>
+        </select>
+
+        <button type="submit">Search</button>
+    </form>
+
+</div>
+
+</section>
+
+
+<section id="middle">
+
+    
+</section>
+
+
+<section id="last">
+
+    
+</section>
+
+
+
+
+{% endblock content %}
+
+
+
+
+{% block script %}
+
+
+
+{% endblock script %}
+
+
+

@@ -33,7 +33,7 @@ header-transparent
     
     <div class="middle">
 
-       <div class="middle-top"> <h2 class="middle-heading">
+       <div class="middle-top"> <h2>
             Top Companies
         </h3>
         <button class="all-companies-button"> View all</button>
@@ -42,164 +42,53 @@ header-transparent
         <div class="companies-list">
 
 
-        <div class="companies-track">
+            <div class="companies-track">
 
-            <a href="" class="company-link">
-            <div class="companies-name">
-                <div class="company-image">
-                    <img src="{%static 'image/k.jpg'%}">
+                {% include "homepage/companies.html" %}
+
                 </div>
-                <div class="company-details">
-                    <h3>Itech Soft</h3>
-                    <p>Currently Open Post: 4</p>
-                    <p>Address: Dhaka,Bangladesh</p>
-                </div>
-            </div>
-            </a>
-
-            <a href="" class="company-link">
-            <div class="companies-name">
-                <div class="company-image">
-                    <img src="{%static 'image/k.jpg'%}">
-                </div>
-                <div class="company-details">
-                    <h3>Itech Soft</h3>
-                    <p>Currently Open Post: 4</p>
-                    <p>Address: Dhaka,Bangladesh</p>
-                </div>
-            </div>
-            </a>
-
-            <a href="" class="company-link">
-            <div class="companies-name">
-                <div class="company-image">
-                    <img src="{%static 'image/k.jpg'%}">
-                </div>
-                <div class="company-details">
-                    <h3>Itech Soft</h3>
-                    <p>Currently Open Post: 4</p>
-                    <p>Address: Dhaka,Bangladesh</p>
-                </div>
-            </div>
-            </a>
-
-            <a href="" class="company-link">
-            <div class="companies-name">
-                <div class="company-image">
-                    <img src="{%static 'image/k.jpg'%}">
-                </div>
-                <div class="company-details">
-                    <h3>Itech Soft</h3>
-                    <p>Currently Open Post: 4</p>
-                    <p>Address: Dhaka,Bangladesh</p>
-                </div>
-            </div>
-            </a>
-
-            <a href="" class="company-link">
-            <div class="companies-name">
-                <div class="company-image">
-                    <img src="{%static 'image/k.jpg'%}">
-                </div>
-                <div class="company-details">
-                    <h3>Itech Soft</h3>
-                    <p>Currently Open Post: 4</p>
-                    <p>Address: Dhaka,Bangladesh</p>
-                </div>
-            </div>
-            </a>
-
-
-            <a href="" class="company-link">
-            <div class="companies-name">
-                <div class="company-image">
-                    <img src="{%static 'image/k.jpg'%}">
-                </div>
-                <div class="company-details">
-                    <h3>Itech Soft</h3>
-                    <p>Currently Open Post: 4</p>
-                    <p>Address: Dhaka,Bangladesh</p>
-                </div>
-            </div>
-            </a>
-
-
-            <a href="" class="company-link">
-            <div class="companies-name">
-                <div class="company-image">
-                    <img src="{%static 'image/k.jpg'%}">
-                </div>
-                <div class="company-details">
-                    <h3>Itech Soft</h3>
-                    <p>Currently Open Post: 4</p>
-                    <p>Address: Dhaka,Bangladesh</p>
-                </div>
-            </div>
-            </a>
-
-
-            <a href="" class="company-link">
-            <div class="companies-name">
-                <div class="company-image">
-                    <img src="{%static 'image/k.jpg'%}">
-                </div>
-                <div class="company-details">
-                    <h3>Itech Soft</h3>
-                    <p>Currently Open Post: 4</p>
-                    <p>Address: Dhaka,Bangladesh</p>
-                </div>
-            </div>
-            </a>
-
-
-            <a href="" class="company-link">
-            <div class="companies-name">
-                <div class="company-image">
-                    <img src="{%static 'image/k.jpg'%}">
-                </div>
-                <div class="company-details">
-                    <h3>Itech Soft</h3>
-                    <p>Currently Open Post: 4</p>
-                    <p>Address: Dhaka,Bangladesh</p>
-                </div>
-            </div>
-            </a>
-
-
-            <a href="" class="company-link">
-            <div class="companies-name">
-                <div class="company-image">
-                    <img src="{%static 'image/k.jpg'%}">
-                </div>
-                <div class="company-details">
-                    <h3>Itech Soft</h3>
-                    <p>Currently Open Post: 4</p>
-                    <p>Address: Dhaka,Bangladesh</p>
-                </div>
-            </div>
-            </a>
-
-
-
-
-
-
-
-        </div>
-
 
         </div>
 
     </div>
+
+
+
+    <div class="middle-last">
+
+        <h2 class="middle-last-heading">Popular Categories</h2>
+
+        <div class="categories">
+
+            <a href="#" class="category-list" > Web Developer 
+            </a>
+
+        </div>
+
+    </div>
+
 
     <div class="last">
+        <h2 class="job-section-heading">Featured Jobs</h2>
+        <div class="post-section">
+{% include 'homepage/post.html'%}
+        </div>
+
+         <div class="all-post">
+
+            <a href="#" class="all-post-button" > See All Posts
+            </a>
+
+        </div>
 
 
     </div>
+    
 
 </section>
 
 
+<script src="{% static 'homepage/company_animation.js' %}" defer></script>
 
 
 {% endblock %}
